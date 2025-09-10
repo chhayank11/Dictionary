@@ -31,10 +31,10 @@ const App = () => {
         onChange={(e) => setWord(e.target.value)}
       />
       <button onClick={clickListener}>Search</button>
+      <h5>Definition:</h5>
+
       {isClicked && (
         <>
-          <h5>Definition:</h5>
-          <br />
           <p>{meaning}</p>
         </>
       )}
